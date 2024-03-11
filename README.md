@@ -24,6 +24,14 @@ The repository explores the following algorithms:
 - **Depth First Search (DFS):** Explores the deepest node in a data structure first.
 - **Breadth First Search (BFS):** Explores the shallowest node in a data structure first.
 
+- **Uninformed search**: search strategy that uses no problem specific knowledege to find solutions to a problem. For example BFS and DFS.
+
+- **Informed search**: search strategy that uses problem specific knowledege to find solutions more efficiently. e.g. : 
+    * **greedy best-first search(gBFS)**: search algorithm that expands the mode that is closest to the goal, as estimated by a heuristic function h(n), like the  
+    
+        * Manhatten distance: how many squares, horizontally and vertically would it take to reach the goal (while relaxing the problem). 
+
+
 ## Program Approach
 
 1. Start with a frontier that contains the initial state.
@@ -38,6 +46,7 @@ The repository explores the following algorithms:
 ## Additional Resources
 
 - [YouTube Video Explanation](https://youtu.be/5NgNicANyqM?si=DB1sDrkocq34wHPI&t=1489)
+- [Link to course materials](https://cs50.harvard.edu/ai/2020/weeks/)
 
 ## Notes
 
