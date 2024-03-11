@@ -124,7 +124,12 @@ class Maze():
 
         # Initialize frontier to just the starting position
         start = Node(state=self.start, parent=None, action=None)
-        frontier = StackFrontier()
+        alg_check = int(input("Which algorithm do you want to use to traverse the maze?(please choose 1 or 2)\n1.BFS[Breadth First Search]\n2.DFS[Depth First Search]\n>>"))
+        alg_options = {
+            1: QueueFrontier(),
+            2: StackFrontier()
+        }
+        frontier = alg_options[alg_check]
         frontier.add(start)
 
         # Initialize an empty explored set
