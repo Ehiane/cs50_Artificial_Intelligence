@@ -27,9 +27,20 @@ The repository explores the following algorithms:
 - **Uninformed search**: search strategy that uses no problem specific knowledege to find solutions to a problem. For example BFS and DFS.
 
 - **Informed search**: search strategy that uses problem specific knowledege to find solutions more efficiently. e.g. : 
-    * **greedy best-first search(gBFS)**: search algorithm that expands the mode that is closest to the goal, as estimated by a heuristic function h(n), like the  
+    * **greedy best-first search(gBFS)**: search algorithm that expands the mode that is closest to the goal, as estimated by a heuristic function h(n), where heuristic means estimation to goal, like the  
     
-        * Manhatten distance: how many squares, horizontally and vertically would it take to reach the goal (while relaxing the problem). 
+        * **Manhatten distance**: how many squares, horizontally and vertically would it take to reach the goal (while relaxing the problem). 
+    
+    * **A-star Search**: search algorithm that expands node with lowest value of g(n) + h(n) 
+
+        g(n) = cost to reach node,
+        h(n) = estimated cost to goal 
+        A-star is optimal if:
+
+            - h(n) is admissible (never overestimates the true cost), and,
+            - h(n) is consistent (for every node n and successor n' with step cost c, h(n) <= h(n') + c)
+
+
 
 
 ## Program Approach
@@ -45,7 +56,7 @@ The repository explores the following algorithms:
 
 ## Additional Resources
 
-- [YouTube Video Explanation](https://youtu.be/5NgNicANyqM?si=DB1sDrkocq34wHPI&t=1489)
+- [YouTube Video Explanation](https://youtu.be/5NgNicANyqM?si=_HmYupuEek5eGLDw&t=4322)
 - [Link to course materials](https://cs50.harvard.edu/ai/2020/weeks/)
 
 ## Notes
