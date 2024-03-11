@@ -223,6 +223,12 @@ class Maze():
 if len(sys.argv) != 2:
     sys.exit("Usage: python maze.py maze.txt")
 
+toggle_show_explored = input("Do you want to view all explored options (via maze.png)\n(Please choose yes or no)\n>>").lower()
+toggle_explored_options = {
+    "yes": True,
+    "no": False,
+}
+
 m = Maze(sys.argv[1])
 print("Maze:")
 m.print()
@@ -231,4 +237,4 @@ m.solve()
 print("States Explored:", m.num_explored)
 print("Solution:")
 m.print()
-m.output_image("maze.png", show_explored=True)
+m.output_image("maze.png", show_explored=toggle_explored_options[toggle_show_explored])
