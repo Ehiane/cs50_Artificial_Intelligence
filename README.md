@@ -40,6 +40,11 @@ The repository explores the following algorithms:
             - h(n) is admissible (never overestimates the true cost), and,
             - h(n) is consistent (for every node n and successor n' with step cost c, h(n) <= h(n') + c)
 
+- **Adverserial Search**: when there is another agent trying to obstruct you reaching your goal. 
+    * **Minimax**: Max(x) is trying to maximize the score, Min(o) is trying to minimize the score. 
+    * **AlphaBeta Prunning**: Optimization of Minimax, where in each decision node instead of considering all options, you consider all options for the first node and choose the smallest, if you are the max and vice versa if you are the min. Keep that value. While traversing the neighbor nodes if you encounter a value smaller than your current min val, stop traversing and move to the next neighbor. repeat this process till you visited all neighbors. Then choose your highest option. 
+    * **Depth-Limited Minimax**: this an optimization to Alphabeta Prunning, where after a certain number of comparisions, it stops comparing and chooses the best option out of the available options.
+    * **evaluation function**: a function that estimates the expected utility of the game from a given state.
 
 
 
