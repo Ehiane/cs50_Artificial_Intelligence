@@ -61,7 +61,7 @@ The repository explores the following algorithms:
 
 ## Additional Resources
 
-- [YouTube Video Explanation](https://youtu.be/5NgNicANyqM?si=_HmYupuEek5eGLDw&t=4322)
+- [YouTube Video Explanation](https://youtu.be/5NgNicANyqM?si=2Uqlhq8BHCsGCVIw&t=6715)
 - [Link to course materials](https://cs50.harvard.edu/ai/2020/weeks/)
 
 ## Notes
